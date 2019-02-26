@@ -15,8 +15,8 @@ Shape.prototype.move = function(x,y) {
 
 function Circle(radius) {
   this.radius = radius ;
-  this.area = radius**2 * 3.14159 ;
-  this.circumference = radius * 2 * 3.14159 ;
+  this.area = function() {return radius**2 * 3.14159 ; }
+  this.circumference = function() {return  radius * 2 * 3.14159 ;}
 }
 Circle.prototype = Object.create(Shape.prototype) ;
 Circle.prototype.constructor = Shape ;
