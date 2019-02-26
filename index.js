@@ -32,3 +32,10 @@ Polygon.prototype.constructor = Shape ;
 Polygon.prototype.numberOfSides = function() {
   return this.sides.length ;
 }
+Polygon.prototype.perimeter = function() {
+  var rim = 0 ; 
+  this.sides.forEach (function(element){
+    rim += element.length ; 
+  })
+  return rim ; 
+}
