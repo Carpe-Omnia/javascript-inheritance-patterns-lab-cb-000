@@ -10,7 +10,9 @@ function Shape() {
     this.position = Point(x,y) ;
   }
 }
-function Circle() {
-  Shape.call(this) ;
+function Circle(radius) {
+  this.radius = radius ;
+  this.area = radius^2 * 3.14159 ;
+  this.circumference = radius * 2 * 3.14159 ;
 
 }
