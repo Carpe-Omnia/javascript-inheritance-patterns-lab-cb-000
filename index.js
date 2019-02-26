@@ -74,5 +74,11 @@ function Square(length) {
 Square.prototype = Object.create(Rectangle.prototype) ;
 Square.prototype.constructor = Rectangle ;
 Square.prototype.listProperties =  function() {
-
+  stuff = [] ; 
+  for (var prop in Square.prototype) {
+    if (Square.prototype.hasOwnProperty(prop)) {
+      stuff << prop ;
+    }
+    return stuff ;
+  }
 }
