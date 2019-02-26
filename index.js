@@ -5,6 +5,7 @@ function Point(x,y) {
     return `(${this.x},${this.y})` ;
   }
 }
+
 function Shape() {
   this.addToPlane = function(x,y) {
     this.position = Point(x,y) ;
@@ -13,9 +14,11 @@ function Shape() {
     this.position = Point(x,y)
   }
 }
+
 function Circle(radius) {
   this.radius = radius ;
   this.area = radius^2 * 3.14159 ;
   this.circumference = radius * 2 * 3.14159 ;
 }
 Circle.prototype = Object.create(Shape.prototype) ;
+Circle.prototype.constructor = Shape ;
