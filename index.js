@@ -20,7 +20,9 @@ function Circle(radius) {
 }
 Circle.prototype = Object.create(Shape.prototype) ;
 Circle.prototype.constructor = Shape ;
-
+function Side(length) {
+  this.length = length ;
+}
 function Polygon(sides) {
   this.sides = sides ;
 
