@@ -43,8 +43,14 @@ Polygon.prototype.perimeter = function() {
   return rim ;
 }
 
-function Quadrilateral(s1, s2, s3,s4) {
+function Quadrilateral(s1, s2, s3, s4) {
   this.sides = [new Side(s1), new Side(s2), new Side(s3), new Side(s4)] ;
 }
 Quadrilateral.prototype = Object.create(Polygon.prototype) ;
 Quadrilateral.prototype.constructor = Polygon ;
+
+function Triangle(s1, s2, s3) {
+  this.sides = [new Side(s1), new Side(s2), new Side(s3)] ;
+}
+Triangle.prototype = Object.create(Polygon.prototype) ;
+Triangle.prototype.constructor = Polygon ;
