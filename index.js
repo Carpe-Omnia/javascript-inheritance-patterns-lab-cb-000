@@ -22,7 +22,8 @@ Circle.prototype = Object.create(Shape.prototype) ;
 Circle.prototype.constructor = Shape ;
 
 function Polygon(sides) {
-  this.sides = sides
+  this.sides = sides ;
+
 }
 Polygon.prototype = Object.create(Shape.prototype) ;
 Polygon.prototype.constructor = Shape ;
