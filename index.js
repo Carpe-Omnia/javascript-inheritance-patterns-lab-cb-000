@@ -21,12 +21,15 @@ function Circle(radius) {
 }
 Circle.prototype = Object.create(Shape.prototype) ;
 Circle.prototype.constructor = Shape ;
+
 function Side(length) {
   this.length = length ;
 }
+
 function Polygon(sides) {
   this.sides = sides ;
 }
+
 Polygon.prototype = Object.create(Shape.prototype) ;
 Polygon.prototype.constructor = Shape ;
 Polygon.prototype.numberOfSides = function() {
@@ -38,4 +41,9 @@ Polygon.prototype.perimeter = function() {
     rim += element.length ;
   })
   return rim ;
+}
+
+function Quadrilateral(s1, s2, s3,s4) {
+  this.sides = [new Side(s1), new Side(s2), new Side(s3), new Side(s4)] ;
+  
 }
