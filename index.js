@@ -33,9 +33,9 @@ Polygon.prototype.numberOfSides = function() {
   return this.sides.length ;
 }
 Polygon.prototype.perimeter = function() {
-  var rim = 0 ; 
+  var rim = 0 ;
   this.sides.forEach (function(element){
-    rim += element.length ; 
+    rim += element.length ;
   })
-  return rim ; 
+  return rim ;
 }
