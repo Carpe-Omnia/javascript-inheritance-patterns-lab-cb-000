@@ -10,3 +10,7 @@ function Shape() {
     this.position = Point(x,y) ;
   }
 }
+function Circle() {
+  Shape.call(this) ;
+
+}
