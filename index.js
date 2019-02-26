@@ -25,7 +25,9 @@ function Side(length) {
 }
 function Polygon(sides) {
   this.sides = sides ;
-
 }
 Polygon.prototype = Object.create(Shape.prototype) ;
 Polygon.prototype.constructor = Shape ;
+Polygon.prototype.numberOfSides = function() {
+  return this.sides.length ; 
+}
