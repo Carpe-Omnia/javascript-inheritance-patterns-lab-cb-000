@@ -65,3 +65,7 @@ Rectangle.prototype.constructor = Quadrilateral  ;
 Rectangle.prototype.area = function() {
   return this.width * this.height ;
 }
+
+function Square(length) {
+  this.sides = [new Side(length), new Side(length), new Side(length), new Side(length),]
+}
