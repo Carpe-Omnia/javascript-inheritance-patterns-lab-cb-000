@@ -9,6 +9,9 @@ function Shape() {
   this.addToPlane = function(x,y) {
     this.position = Point(x,y) ;
   }
+  this.move = function(x,y) {
+    this.position = Point(x,y)
+  }
 }
 function Circle(radius) {
   this.radius = radius ;
