@@ -1,8 +1,6 @@
 function Point(x,y) {
   this.x = x ;
   this.y = y ;
-  this.toString
-
   }
 }
 Point.prototype.toString = function() {return `(${this.x},${this.y})` ;}
