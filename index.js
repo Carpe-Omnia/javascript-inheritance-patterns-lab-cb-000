@@ -80,7 +80,7 @@ Square.prototype.listProperties =  function() {
     if (sq.hasOwnProperty(prop)) {
       stuff += prop ;
       stuff += sq[prop] ;
-      stuff += "/n" ;
+      //stuff += "/n" ;
     }
     return stuff ;
   }
