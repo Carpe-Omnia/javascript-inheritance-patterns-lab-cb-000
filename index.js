@@ -78,7 +78,7 @@ Square.prototype.listProperties =  function() {
   var stuff = "" ;
   for (var prop in sq) {
     if (sq.hasOwnProperty(prop)) {
-      stuff.push( prop )  ;
+      stuff += prop ; 
     }
     return stuff ;
   }
