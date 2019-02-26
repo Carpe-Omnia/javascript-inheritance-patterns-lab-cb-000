@@ -45,5 +45,5 @@ Polygon.prototype.perimeter = function() {
 
 function Quadrilateral(s1, s2, s3,s4) {
   this.sides = [new Side(s1), new Side(s2), new Side(s3), new Side(s4)] ;
-  
+
 }
