@@ -5,3 +5,8 @@ function Point(x,y) {
     return `(${this.x},${this.y})` ;
   }
 }
+function Shape() {
+  this.addToPlane = function(x,y) {
+    this.position = Point(x,y) ;
+  }
+}
